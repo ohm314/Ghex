@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/hex.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+
+    <script type="text/javascript" src="/assets/js/ghex_config.js"></script>
+
+</head>
+
+<body class="{{body_class}}"  style="background: {{#if @blog.cover}} url({{@blog.cover}}) repeat center center fixed {{/if}} #f0f0f0;">
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    <footer class="site-footer">
+
+
+        <a class="subscribe" href="{{@blog.url}}/rss/"><span class="icon-social" style="display: inline;">r</span></a>
+
+        <div id="social_down" class="head_social" style="display: none;">
+            <ul>
+            </ul>
+        </div>
+
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
+        </div>
+    </footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for Ghex }}
+    <script type="text/javascript" src="/assets/js/fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+
+</body>
+</html>

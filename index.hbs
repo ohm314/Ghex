@@ -1,0 +1,62 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The big featured header on the homepage, with the site logo and description }}
+<header id="site-head">
+    <div class="vertical">
+        <div id="site-head-content" class="inner">
+
+            {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+
+
+
+            <h1 class="blog-title">{{@blog.title}}</h1>
+            <h2 class="blog-description">{{@blog.description}}</h2>
+
+             <div class="head_pages">
+            <ul>
+
+            </ul>
+        </div>
+
+            <div  id="social_up" class="head_social" style="display :none;">
+                <ul>
+                </ul>
+            </div>
+
+            <hr style="max-width: 40%; margin: auto auto;">
+        </div>
+    </div>
+</header>
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+  
+  <section id="posts">
+
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+    
+    <div class="{{post_class}} hex_post">
+      <div class="hexagon hexagon2">
+        <div class="hexagon-in1">
+          <div class="hexagon-in2">
+                <div class="cover">{{content words="0"}}</div>
+                <div class="hex_background" >
+                <h2 class="post-title vertical" style="color: black;"><a href="{{url}}">{{{title}}}</a><br>
+<span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span>
+                </h2>    
+                </div>
+        </div>
+        </div>
+      </div>
+      </div>
+
+    {{/foreach}}
+
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+</section>
+</main>
