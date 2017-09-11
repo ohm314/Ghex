@@ -1,7 +1,6 @@
-# Ghex theme for Ghost
+#  Ghex - HoneyComb Responsive Ghost Theme 
 
 Jon Unibaso theme for [Ghost](http://github.com/tryghost/ghost/).
-JonUnibaso.es
 
 ## Copyright & License
 
