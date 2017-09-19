@@ -33,21 +33,21 @@
 
 {{! The main content area on the homepage }}
 <main class="content" role="main">
-  
+
   <section id="posts">
 
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
-    
+
     <div class="{{post_class}} hex_post">
       <div class="hexagon hexagon2">
         <div class="hexagon-in1">
           <div class="hexagon-in2">
-                <div class="cover">{{content words="0"}}</div>
+                <div class="cover">{{img_url feature_image}}</div>
                 <div class="hex_background" >
                 <h2 class="post-title vertical" style="color: black;"><a href="{{url}}">{{{title}}}</a><br>
 <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span>
-                </h2>    
+                </h2>
                 </div>
         </div>
         </div>

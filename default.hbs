@@ -7,26 +7,25 @@
 
     {{! Page Meta }}
     <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{! Styles'n'Scripts }}
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/hex.css" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/hex.css"}}" />
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 
-    <script type="text/javascript" src="/assets/js/ghex_config.js"></script>
+    <script type="text/javascript" src="{{asset "js/ghex_config.js"}}"></script>
 
 </head>
 
-<body class="{{body_class}}"  style="background: {{#if @blog.cover}} url({{@blog.cover}}) repeat center center fixed {{/if}} #f0f0f0;">
+<body class="{{body_class}}"  style="background: {{#if @blog.cover_image}} url({{@blog.cover_image}}) repeat center center fixed {{/if}} #f0f0f0;">
 
     {{! Everything else gets inserted here }}
     {{{body}}}
@@ -51,8 +50,8 @@
     {{ghost_foot}}
 
     {{! The main JavaScript file for Ghex }}
-    <script type="text/javascript" src="/assets/js/fitvids.js"></script>
-    <script type="text/javascript" src="/assets/js/index.js"></script>
+    <script type="text/javascript" src="{{asset "js/fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </body>
 </html>
