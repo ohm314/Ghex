@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -18,7 +18,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -88,7 +88,7 @@ table {
     text-decoration: none;
 }
 
-/* Each icon is created by inserting the corret character into the 
+/* Each icon is created by inserting the corret character into the
    content of the :before pseudo element. Like a boss. */
 .icon-ghost:before {
     content: "\e000";
@@ -347,8 +347,8 @@ kbd {
     font-weight: bold;
     background: #f4f4f4;
     border-radius: 4px;
-    box-shadow: 
-        0 1px 0 rgba(0, 0, 0, 0.2), 
+    box-shadow:
+        0 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 0 0 #fff inset;
 }
 
@@ -434,7 +434,7 @@ strong
 
 
 /* ==========================================================================
-   4. General - The main styles for the the theme
+   4. General - The main styles for the theme
    ========================================================================== */
 
 /* Big cover image on the home page */
@@ -545,7 +545,7 @@ strong
 
 /* Every post, on every page, gets this style on its <article> tag */
 .full_post {
-    
+
     position: relative;
     width:80%;
     max-width: 700px;
@@ -554,13 +554,13 @@ strong
     border-bottom: #EBF2F6 1px solid;
     word-break: break-word;
     hyphens: auto;
-    
+
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
 .full_post:after {
-    
+
     display: block;
     content: "";
     width: 7px;
@@ -575,7 +575,7 @@ strong
     -moz-border-radius: 100%;
     border-radius: 100%;
     box-shadow: #fff 0 0 0 5px;
-    
+
 }
 
 .post-title {
@@ -890,7 +890,7 @@ strong
 
 /* The RSS icon, inserted via icon font */
 .subscribe:before {
-   
+
 }
 
 /* Add a box shadow to on hover */
@@ -963,9 +963,9 @@ strong
     }
 
     #site-head {
-        -webkit-box-sizing: border-box; 
+        -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         height: auto;
         min-height: 240px;
         padding: 15% 0;
@@ -1023,7 +1023,7 @@ strong
         max-height: 80px;
     }
 
-    .inner, 
+    .inner,
     .pagination {
         width: auto;
         margin-left: 16px;
