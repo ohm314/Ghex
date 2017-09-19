@@ -29,6 +29,9 @@
         </div>
 
         <section class="post-content">
+            {{#if feature_image}}
+                <img src="{{feature_image}}" alt="{{title}}" />
+            {{/if}}
             {{content}}
         </section>
 
